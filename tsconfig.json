@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "ES2015",
+    "target": "ES5",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "compileOnSave": false,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react"
+  },
+  "lib": ["ES2015", "dom"],
+  "exclude": [
+    "node_modules",
+    "typings"
+  ]
+}
+
