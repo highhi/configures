@@ -18,8 +18,11 @@ module.exports = {
 
   module: {
     rules: [
+      // use bable
       { test: /\.js?$/, use: 'babel-loader', exclude: /node_modeules/ },
-    ]
+      // use typescript
+      // { test: /\.tsx?$/, use: 'awesome-typescript-loader', exclude: /node_modlues/ },
+    ],
   },
 
   plugins: [
@@ -27,4 +30,8 @@ module.exports = {
       'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV) },
     }),
   ],
+  
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx'],
+  }
 };
