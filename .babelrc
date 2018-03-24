@@ -1,7 +1,12 @@
 {
   "presets": [
-    ["es2015", { "modules": false }],
-    "stage-2",
-    ["env", { "targets": { "browsers": ["last 2 versions", "safari >= 7"] } }]
+    ["env", { 
+      "targets": { "browsers": ["last 2 versions", "safari >= 8"] },
+      "module": false
+    }]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread"
   ]
 }
