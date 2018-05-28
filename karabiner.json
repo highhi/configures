@@ -61,6 +61,21 @@
                         ]
                     },
                     {
+                        "description": "control + h to delete_or_backspace",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    { "key_code": "delete_or_backspace" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "control + n to -",
                         "manipulators": [
                             {
